@@ -3,6 +3,8 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
     <Description>
       Implementação de Log customizado com NLog e ILogger
     </Description>
@@ -26,6 +28,10 @@
       <PackagePath>$(ContentTargetFolders)</PackagePath>
       <flatten>false</flatten>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>

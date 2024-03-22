@@ -3,6 +3,8 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
     <Description>
       Possui classes para padronizar a comunicação com apis externas, padronizando inclusive o
       retorno da request.
@@ -22,6 +24,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Nuuvify.CommonPack.Security.Abstraction\Nuuvify.CommonPack.Security.Abstraction.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>

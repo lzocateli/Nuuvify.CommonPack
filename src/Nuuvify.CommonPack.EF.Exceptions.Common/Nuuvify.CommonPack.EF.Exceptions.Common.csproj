@@ -3,6 +3,8 @@
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+
         <PackageTags>EntityFramework EF Exception SqlServer PostgreSQL MySql EntityFrameworkCore
             entity-framework-core EFCore Data Database</PackageTags>
         <PackageReleaseNotes>Populate Entries property of the exceptions</PackageReleaseNotes>
@@ -18,5 +20,9 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.3" />
     </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
 </Project>

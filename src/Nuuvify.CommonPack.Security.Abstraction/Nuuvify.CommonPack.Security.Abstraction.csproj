@@ -3,6 +3,8 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+
         <Description>
         Essa biblioteca contem abstrações (interfaces) e demais classes auxilires para a lib
         que implementa Security.
@@ -18,5 +20,9 @@
     <ItemGroup>
         <ProjectReference Include="..\Nuuvify.CommonPack.Extensions\Nuuvify.CommonPack.Extensions.csproj" />
     </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
 </Project>

@@ -3,6 +3,8 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
     <Description>
       Essa biblioteca tem objetivo de implementar UnitOfWork para qualquer banco de dados,
       implementando metodos de uso basico e comumente utilizado em projetos.
@@ -13,6 +15,10 @@
   <ItemGroup>
     <ProjectReference Include="..\Nuuvify.CommonPack.UnitOfWork.Abstraction\Nuuvify.CommonPack.UnitOfWork.Abstraction.csproj" />
     <ProjectReference Include="..\Nuuvify.CommonPack.AutoHistory\Nuuvify.CommonPack.AutoHistory.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>

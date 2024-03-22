@@ -3,6 +3,8 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
     <Description>
       Implementa Autorização e Autenticação com OAuth2, JWT - deve ser baixado no projeto IoC, aqui
       não contempla OpenId
@@ -39,6 +41,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>MsgSecurityJwt.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>

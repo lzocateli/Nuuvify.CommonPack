@@ -1,4 +1,6 @@
-﻿**************************************************************************************
+﻿[Github]([https://](https://github.com/lzocateli/Nuuvify.CommonPack/tree/main/src/Nuuvify.CommonPack.EF.Exceptions.Db2))
+
+**************************************************************************************
 IMPORTANTE: IBM DB2 até a versão 3.1.0.500 não é possivel usar SaveChangesAsync, 
             pois causa exception ao fazer Add, apesar de funcionar com Update e Delete, dessa
             forma utilize SaveChanges (sincrono) em AppDbContext.cs

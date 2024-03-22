@@ -3,6 +3,8 @@
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+
         <Description>
             Armazena a chave privada para geracao de token em banco de dados e fornece uma chave
             publica
@@ -16,9 +18,11 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference
-            Include="..\Nuuvify.CommonPack.Security.JwtCredentials\Nuuvify.CommonPack.Security.JwtCredentials.csproj" />
+        <ProjectReference Include="..\Nuuvify.CommonPack.Security.JwtCredentials\Nuuvify.CommonPack.Security.JwtCredentials.csproj" />
     </ItemGroup>
 
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
 </Project>

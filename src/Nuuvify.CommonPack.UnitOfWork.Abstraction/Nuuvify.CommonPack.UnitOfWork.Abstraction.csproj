@@ -3,6 +3,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
     <Description>
       Essa biblioteca possui as abstrações, ou, as interfaces que podevem ser utilizadas 
       em qualquer projeto. Porém a biblioteca contendo as implmentações, deve ser instalada
@@ -14,4 +16,8 @@
     <ProjectReference Include="..\Nuuvify.CommonPack.Extensions\Nuuvify.CommonPack.Extensions.csproj" />
   </ItemGroup>
   
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
 </Project>

@@ -3,6 +3,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
     <Description>Abstração para Azure Blobs Storage - Instalar no projeto IoC</Description>
   </PropertyGroup>
 
@@ -14,8 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference
-      Include="..\Nuuvify.CommonPack.AzureStorage.Abstraction\Nuuvify.CommonPack.AzureStorage.Abstraction.csproj" />
+    <ProjectReference Include="..\Nuuvify.CommonPack.AzureStorage.Abstraction\Nuuvify.CommonPack.AzureStorage.Abstraction.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>

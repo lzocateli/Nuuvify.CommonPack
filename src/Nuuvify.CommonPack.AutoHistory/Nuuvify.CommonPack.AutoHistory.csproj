@@ -3,6 +3,7 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <Description>
       Essa biblioteca é uma extensão do EntityFrameworkCore para ser utilizado junto com UnitOfWork
       a fim de incluir na tabela AutoHistory, todas as alterações feitas em um registro em qualquer
@@ -16,8 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference
-      Include="..\Nuuvify.CommonPack.UnitOfWork.Abstraction\Nuuvify.CommonPack.UnitOfWork.Abstraction.csproj" />
+    <ProjectReference Include="..\Nuuvify.CommonPack.UnitOfWork.Abstraction\Nuuvify.CommonPack.UnitOfWork.Abstraction.csproj" />
   </ItemGroup>
 
   <ItemGroup Label="Packaging">
@@ -26,6 +26,10 @@
       <PackagePath>$(ContentTargetFolders)</PackagePath>
       <flatten>false</flatten>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>

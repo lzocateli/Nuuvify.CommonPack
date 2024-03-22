@@ -3,6 +3,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
     <Description>Biblioteca com implementaçôes comuns para projetos DOMAIN</Description>
   </PropertyGroup>
 
@@ -56,6 +58,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>MsgFluentValidator.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
